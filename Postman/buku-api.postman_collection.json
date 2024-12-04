@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "aada4c0c-64c4-44f0-8da7-633c2fd5c767",
+		"name": "buku-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39182041",
+		"_collection_link": "https://buku-api.postman.co/workspace/buku-api~2eb16f9a-cc94-4d98-8230-0e17427f5a8a/collection/39182041-aada4c0c-64c4-44f0-8da7-633c2fd5c767?action=share&source=collection_link&creator=39182041"
+	},
+	"item": [
+		{
+			"name": "INDEX",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/buku",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"buku"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SHOW",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/buku/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"buku",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "STORE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "judul",
+							"value": "Aku yang jatuh cinta",
+							"type": "text"
+						},
+						{
+							"key": "pengarang",
+							"value": "Andri",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_publikasi",
+							"value": "2024-11-23",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/buku",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"buku"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "judul",
+							"value": "ada apa dengan aku",
+							"type": "text"
+						},
+						{
+							"key": "pengarang",
+							"value": "dapi",
+							"type": "text"
+						},
+						{
+							"key": "tanggal-publikasi",
+							"value": "2024-10-28",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/buku/11",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"buku",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/buku/12",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"buku",
+						"12"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
